@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.build.json",
+    "compilerOptions": {
+        "paths": {
+            "@bigbangjs/framework": [
+                "./packages/core/src"
+            ],
+        }
+    },
+    "exclude": [
+        "**node_modules**",
+        "**dist**",
+        "**/*.js",
+        "**/*spec.ts"
+    ]
+}

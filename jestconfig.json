@@ -1,0 +1,20 @@
+{
+  "testTimeout": 30000,
+  "preset": "ts-jest",
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+    "<rootDir>/packages/**/src/*.ts"
+  ],
+  "moduleNameMapper": {
+    "@bigbangjs/file-storage": "<rootDir>/packages/core/src",
+    "@bigbangjs/file-storage-(.*)": "<rootDir>/packages/$1/src"
+  },
+  "modulePathIgnorePatterns": [
+    "dist/package.json",
+    "<rootDir>/package.json"
+  ],
+  "projects": [
+    "<rootDir>/jestconfig.root.json",
+    "<rootDir>/packages/**/jestconfig.json"
+  ]
+}
